@@ -45,7 +45,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 .toggle { display: none;}
@@ -334,6 +334,18 @@ nav .my-name:hover {transform: scale(1.1);}
 .button .btn1:hover {
     color: #00242C;
     background-position: 100%;
+}
+
+/* oval-rond */
+.oval-rond {
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    background: #FFF;
+    position: relative;
+    z-index: 2;
+    top: 195px;
+    right: 12px;
 }
 
 /* ********about********* */
@@ -1001,6 +1013,10 @@ footer .sandip {
         width: 100%;
         font-size: 20px;
     }
+    .oval-rond {
+        top: 244px;
+        right: 14px;
+    }
 
 }
 
@@ -1063,12 +1079,20 @@ footer .sandip {
     #about {
         max-width: 100%!important;
     }
+    .oval-rond {
+        top: 195px;
+        right: 12px;
+    }
 }
 
 @media screen and (max-width: 470px) {
     .home {
         margin-top: 270px;
         height: 1000px;
+    }
+
+    .oval-rond {
+        display: none;
     }
 
     .presentation .name {font-size: 60px;}

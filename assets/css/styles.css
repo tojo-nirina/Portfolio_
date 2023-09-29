@@ -19,6 +19,11 @@ ul li {list-style: none;}
 main {
     max-width: 85%;
     margin: auto;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
 }
 
 @font-face {
@@ -68,6 +73,7 @@ nav .my-name {
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
     cursor: pointer;
+    position: relative;
 }
 
 nav .my-name:hover {transform: scale(1.1);}
@@ -86,6 +92,12 @@ nav .my-name:hover {transform: scale(1.1);}
     gap: 12px;
 }
 
+.menu ul li {
+    position: relative;
+    opacity: 1;
+    top: 0;
+}
+
 .menu .item-nav a {
     font-size: 20px;
 }
@@ -95,6 +107,7 @@ nav .my-name:hover {transform: scale(1.1);}
     padding: 10px 20px;
     border-radius: 30px;
     text-align: center;
+    cursor: pointer;
 }
 
 .menu li a, a:visited {
@@ -143,6 +156,7 @@ nav .my-name:hover {transform: scale(1.1);}
     flex-direction: column;
     align-items: center;
     position: relative;
+   
 }
 
 .contenant {
@@ -173,7 +187,7 @@ nav .my-name:hover {transform: scale(1.1);}
     top: 275px;
     left: 0;
     right: 0;
-    width: 810px;
+    width: 750px;
     margin: auto;
 }
 
@@ -188,8 +202,8 @@ nav .my-name:hover {transform: scale(1.1);}
 
 .skill .second {
     position: relative;
-    right: 195px;
-    top: -170px;
+    right: 162px;
+    top: -164px;
 }
 
 .skill .row-skill .logo {
@@ -254,15 +268,29 @@ nav .my-name:hover {transform: scale(1.1);}
 }
 
 .down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
     position: absolute;
-    top: 40%;
-    right: 0;
-    transform: rotate(90deg);
+    top: 10%;
+    right: 50px;
     color: #FFF;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.down .bulle {
+    padding: 10px;
+    border: 1px solid #00D1FF;
+    border-radius: 30px;
+    position: relative;
+}
+
+.down .svg-inline--fa {
+    font-size: 20px;
 }
 
 .presentation  {
@@ -388,6 +416,7 @@ nav .my-name:hover {transform: scale(1.1);}
     align-items: center;
     gap: 180px;
     margin-top: 96px;
+    padding: 20px;
 }
 
 .about-container .oval {
@@ -422,6 +451,7 @@ nav .my-name:hover {transform: scale(1.1);}
     font-family: 'Darker Grotesque';
     font-size: 18px;
     font-weight: 500;
+    padding: 5px;
 }
 
 .block-right button {
@@ -549,7 +579,7 @@ nav .my-name:hover {transform: scale(1.1);}
 
 .row-projects .img-oval {
     width: 100%;
-    height: 340px;
+    height: 300px;
     flex-shrink: 0;
     border-radius: 18px;
     background: #00242C;
@@ -587,6 +617,10 @@ nav .my-name:hover {transform: scale(1.1);}
   
     height: 76px;
     transition: 5s;
+}
+
+.aos-animate {
+    transition: 1s!important;
 }
 
 .btn-link {
@@ -773,6 +807,7 @@ form ::placeholder {
 .sub input  {
     color: #00242C;
     font-size: 24px;
+    cursor: pointer;
 }
 
 /* *footer** */
@@ -784,6 +819,7 @@ footer {
     flex-direction: column;
     align-items: center;
     transition: 10s;
+    overflow: hidden;
 }
 
 footer:hover {
@@ -824,9 +860,10 @@ footer .icon {
     justify-content: center;
     width: 72px;
     height: 72px;
-    flex-shrink: 0;
     background: rgba(0, 36, 44, 1);
     border-radius: 18px;
+    position: relative;
+    transition: 1s;
 }
 
 footer .icons .svg-inline--fa {
@@ -878,12 +915,6 @@ footer .sandip {
     color: rgba(0, 36, 44, 1);
 }
 
-
-.ulRotate {
-    transform: rotate(0deg);
-    transition: 0.5s;
-}
-
 @media screen and (max-width: 1115px) {
     nav { max-width: 90%; }
 
@@ -903,12 +934,14 @@ footer .sandip {
     }
 
     .block-contact { width: 60%;}
-    
+
+    main {max-width: 92%;}
+        
 }
 
 @media screen and (max-width: 992px) {
 
-    .my-project {grid-template-columns: 1fr 1fr; }
+    .my-project {grid-template-columns: 1fr 1fr;}
 
         /* ****toggle**** */
 
@@ -943,12 +976,30 @@ footer .sandip {
         transition:transform 1.5s;
     }
 
+    ul li {
+        position: relative;
+        transition: 0.5s;
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(250px);
+        transition-delay: calc(0.1s * var(--i));
+     }
+     
     .menu ul {
         display: flex;
         flex-direction: column;
         gap: 80px;
         position: relative;
-        top: -470px;
+    }
+
+    .menu ul li {
+        transition-delay: calc(0.1s * var(--i));
+    }
+
+    .open ul li {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0px);
     }
 
     .open .menu ul {
@@ -959,15 +1010,6 @@ footer .sandip {
         transform: translateX(0);
     }
 
-    .open .toggle {
-        transform: rotate(-900deg);
-    }
-    
-    .ulRotate {
-        transform: rotate(-1440deg)!important;
-        transition: 1.5s;
-    }
-    
     nav .toggle .ouvrir, .fermer{
         font-size: 32px;
         color: #00D1FF;
@@ -1096,6 +1138,10 @@ footer .sandip {
     }
 
     .presentation .name {font-size: 60px;}
+
+    .about-container .oval2 {
+        transform: rotate(-3deg);
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1141,5 +1187,11 @@ footer .sandip {
 
     .btn-link .btn {
         width: 30%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .home {
+        height: 840px;
     }
 }

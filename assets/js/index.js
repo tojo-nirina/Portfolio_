@@ -1,17 +1,12 @@
 const myName = document.querySelector('.my-name');
   myName.innerText = '< RT / >';
 
-const down = document.querySelector(".down");  
-  down.innerText = "SCROLE DOWN ---->";
-
   //********/
 let toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
-let listeNav = document.querySelector('ul')
 
 toggle.addEventListener('click', function (){
     body.classList.toggle('open');
-    listeNav.classList.toggle('ulRotate');
 })
 
 const allLink = document.querySelectorAll('.item-nav');
@@ -40,3 +35,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  // Animation de la page d'accueil
+  const header = document.querySelector('header');
+
+  const h1 = document.getElementById('titre-anime');
+  const listeUl = document.querySelectorAll('.menu ul li');
+  const downIcon = document.querySelectorAll('.bulle');
+  const logoJs = document.querySelector('.row-skill .js');
+  const logoHtml = document.querySelector('.row-skill .html');
+  const logosCss = document.querySelector('.row-skill .css');
+  const logoBootstrap = document.querySelector('.row-skill .bootstrap');
+
+  window.addEventListener('load', () => {
+    const TL = gsap.timeline({paused: true});
+    TL
+    .staggerFrom(header, 1, {top: -50, opacity:0, ease: "power2.out"},0.3)
+    .staggerFrom(h1, 1, {top: -50, opacity:0, ease: "power2.out"},0.3)
+    .staggerFrom(listeUl, 1, {top: -50, opacity:0, ease: "power2.out"},0.3)
+    .staggerFrom(logoJs, 1, {top: -500, ease: "power2.out"},0.4, '-=1')
+    .staggerFrom(logoHtml, 1.5, {top: -500, ease: "power2.out"},0.4, '-=1')
+    .staggerFrom(logosCss, 2, {top: -700, ease: "power2.out"},0.4, '-=1')
+    .staggerFrom(logoBootstrap, 1, {top: -700, ease: "power2.out"},0.4, '-=1')
+    .staggerFrom(downIcon, 1, {left: -100, top:-700, ease: "power2.out"},0.3, '-=1')
+    TL.play();
+})

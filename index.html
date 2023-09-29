@@ -6,23 +6,24 @@
     <link rel="shortcut icon" href="assets/icons/iconLogo.PNG" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
     <section class="home">
         <header>
             <nav>
-               <h1 class="my-name"></h1>
+               <h1 id="titre-anime" class="my-name"></h1>
                 <div class="toggle" id="menuBtn">
                     <i class="fa-solid fa-bars ouvrir"></i>
                     <i class="fa-solid fa-xmark fermer"></i>
                 </div>
                 <div class="menu" id="sideMenu">
                     <ul>
-                        <li class="item-nav" id="nav-item"><a href="#about">A propos de moi</a></li>
-                        <li class="item-nav" id="nav-item"><a href="#experience">Compétences</a></li>
-                        <li class="item-nav" id="nav-item"><a href="#projects">Projets</a></li>
-                        <li class="item-nav" id="nav-item"><a href="#contact">Contact</a></li>
+                        <li style="--i:0;" class="item-nav" id="nav-item"><a href="#about">A propos de moi</a></li>
+                        <li style="--i:2;" class="item-nav" id="nav-item"><a href="#experience">Compétences</a></li>
+                        <li style="--i:3;" class="item-nav" id="nav-item"><a href="#projects">Projets</a></li>
+                        <li style="--i:4;" class="item-nav" id="nav-item"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -34,7 +35,7 @@
             </div>
             <div class="contenant">
                 <div class="oval-rond"></div>
-                <img class="profil" src="assets/picture/tojonirina(profile).png" alt="profile">
+                <img class="profil" src="assets/picture/tojonirina(profile).png" alt="profile" data-aos="zoom-in">
                 <div class="presentation">
                     <div>
                         <div class="hello">Salut! je m'appelle</div>
@@ -66,21 +67,34 @@
                     </div>
                 </div>
             </div>
-            <div class="down"></div>
+            <div class="down">
+                <a class="bulle" href="https://www.facebook.com/Rakotonirina.tojoniaina2001">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="bulle" href="https://www.linkedin.com/in/tojoniaina-rakotondratsimba/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="bulle" href="https://join.skype.com/invite/Oz9CuffkRjVf">
+                    <i class="fa-brands fa-skype"></i>
+                </a>
+                <a class="bulle" href="https://github.com/tojo-rak ">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
         </div>
     </section>
     <main>
         <section id="about">
             <div class="txt">
-                <p>Faire connaissance</p>
-                <div class="title">À-propos de moi</div>
+                <p data-aos="zoom-in">Faire connaissance</p>
+                <div class="title" data-aos="zoom-in">À-propos de moi</div>
             </div>
             <div class="about-container">
-                <div class="oval">
-                    <div class="oval1"></div>
-                    <img class="oval2" src="assets/picture/tojo.png" alt="profil">
+                <div class="oval" data-aos="fade-left">
+                    <div class="oval1" data-aos="fade-right"></div>
+                    <img class="oval2" src="assets/picture/tojo.png" alt="profil" >
                 </div>
-                <div class="block-right">
+                <div class="block-right" data-aos="fade-right">
                     <p class="paragraph">Bonjour, je suis
                         Tojonirina
                         RAKOTONDRATSIMBA, 
@@ -99,12 +113,12 @@
         </section>
         <section id="experience">
             <div class="txt">
-                <p>Quelles compétences j'ai</p>
-                <div class="title">mes compétences</div>
+                <p data-aos="zoom-in">Quelles compétences j'ai</p>
+                <div class="title" data-aos="zoom-in">mes compétences</div>
             </div>
             <div class="experience-container">
                 <div class="experience-row">
-                   <div class="row-skills">
+                   <div class="row-skills" data-aos="fade-right">
                         <div class="title-skill">mon premier cours</div>
                         <div class="skills">
                             <div class="skill-container">
@@ -155,7 +169,7 @@
                             </div>
                         </div>
                    </div>
-                   <div class="row-skills">
+                   <div class="row-skills" data-aos="fade-left">
                         <div class="title-skill">la deuxième leçon que j'ai apprise</div>
                         <div class="skills">
                             <div class="skill-container">
@@ -204,12 +218,12 @@
         </section>
         <section id="projects">
             <div class="txt">
-                <p>le travail que j'ai fait</p>
-                <div class="title">mes projets</div>
+                <p data-aos="zoom-in">le travail que j'ai fait</p>
+                <div class="title" data-aos="zoom-in">mes projets</div>
             </div>
             <div class="projects-container">
                 <div class="row-projects">
-                    <div class="row">
+                    <div class="row" data-aos="fade-right">
                        <a  href="https://tojo-nirina.github.io/model-portfolio/">
                             <img class="img-oval" src="assets/picture/image_de_projet/modelPortfolio.PNG" alt="porfolio">
                        </a>
@@ -232,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-left">
                         <a href=" https://tojo-nirina.github.io/Portfolio_/">
                             <img class="img-oval" src="assets/picture/image_de_projet/ma-portfolio.PNG" alt="mon portfolio">
                         </a>
@@ -255,7 +269,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-right">
                         <a href="">
                             <img class="img-oval" src="assets/picture/image_de_projet/Kyoto.PNG" alt="site de Kyoto">
                         </a>
@@ -279,7 +293,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-left">
                         <a   href="https://tojo-nirina.github.io/robbie-lens/">
                             <img class="img-oval" src="assets/picture/image_de_projet/robbie-lens.png" alt="site de Robbie Lens">
                         </a>
@@ -302,7 +316,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-right">
                         <a href="https://tojo-nirina.github.io/robbieLensBootstrap/">
                             <img class="img-oval" src="assets/picture/image_de_projet/robbie-lens.png" alt="site de Robbie Lens">
                         </a>
@@ -325,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-left">
                         <a href="https://tojo-nirina.github.io/take/">
                             <img class="img-oval" src="assets/picture/image_de_projet/take.PNG" alt="site de take">
                         </a>
@@ -348,7 +362,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-right">
                         <a href="https://tojo-nirina.github.io/fisheye/">
                             <img class="img-oval" src="assets/picture/image_de_projet/Fiseye.PNG" alt="projets fisheye">
                         </a>
@@ -371,7 +385,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-left">
                         <a href="https://tojo-nirina.github.io/dashboard-mockup/">
                             <img class="img-oval" src="assets/picture/image_de_projet/dashboard.PNG" alt="projets dashboard">
                         </a>
@@ -394,7 +408,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-right">
                         <a href="https://tojo-nirina.github.io/hounter/">
                             <img class="img-oval" src="assets/picture/image_de_projet/Hounter.PNG" alt="projets hounter">
                         </a>
@@ -417,7 +431,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-left">
                         <a href="https://tojo-nirina.github.io/sign/">
                             <img class="img-oval" src="assets/picture/image_de_projet/sign.PNG" alt="peojets sign">
                         </a>
@@ -440,7 +454,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade-right">
                         <a href="https://tojo-nirina.github.io/Monito/">
                             <img class="img-oval" src="assets/picture/image_de_projet/monito1.PNG" alt="projets monito">
                         </a>
@@ -468,8 +482,8 @@
         </section>
         <section id="contact">
             <div class="txt">
-                <p>Entrer en contact</p>
-                <div class="title">Contactez moi</div>
+                <p data-aos="zoom-in">Entrer en contact</p>
+                <div class="title" data-aos="zoom-in">Contactez moi</div>
             </div>
             <div class="contact-content">
                 <div class="container">
@@ -520,25 +534,25 @@
     </main>
     <footer>
         <div class="txt">
-            <div class="title">Merci..!</div>
+            <div class="title" data-aos="zoom-in">Merci..!</div>
         </div>
         <div class="icons">
-            <div class="icon">
+            <div class="icon" data-aos="fade-right">
                 <a href="https://www.facebook.com/Rakotonirina.tojoniaina2001">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
-            <div class="icon">
+            <div class="icon" data-aos="fade-left">
                 <a href="https://join.skype.com/invite/Oz9CuffkRjVf">
                     <i class="fa-brands fa-skype"></i>
                 </a>
             </div>
-           <div class="icon">
+           <div class="icon" data-aos="fade-right">
                 <a href="https://www.linkedin.com/in/tojoniaina-rakotondratsimba/">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
            </div>
-           <div class="icon">
+           <div class="icon" data-aos="fade-left">
                 <a href="https://github.com/tojo-rak">
                     <i class="fa-brands fa-github"></i>
                 </a>
@@ -554,5 +568,11 @@
     </footer>
 <script src="assets/js/index.js" ></script>
 <script src="assets/js/fontawesome.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

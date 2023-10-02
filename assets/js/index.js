@@ -1,7 +1,14 @@
 const myName = document.querySelector('.my-name');
+const mousemove = document.querySelector(".mousemove");
   myName.innerText = '< RT / >';
 
-  //********/
+  window.addEventListener("mousemove", (e) => {
+    //console.log(e.target);
+    mousemove.style.left = e.pageX + "px";
+    mousemove.style.top = e.pageY + "px";
+  })
+
+  //****menu responsive****/
 let toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
 
@@ -16,8 +23,37 @@ allLink.forEach(item => {
     })
 })
 
-//********/
+// slides projects 
+var slideIndex = 1;
+    showSlides(slideIndex);
 
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("custom-slider");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" actived", "");
+        }
+
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " actived";
+    }     
+
+//********/
 document.addEventListener('DOMContentLoaded', function() {
     const navigationLinks = document.querySelectorAll('.menu a');
   
@@ -59,3 +95,5 @@ document.addEventListener('DOMContentLoaded', function() {
     .staggerFrom(downIcon, 1, {left: -100, top:-700, ease: "power2.out"},0.3, '-=1')
     TL.play();
 })
+
+// Animation 

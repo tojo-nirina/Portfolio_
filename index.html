@@ -13,7 +13,11 @@
     <section class="home">
         <header>
             <nav>
-               <h1 id="titre-anime" class="my-name"></h1>
+               <div>
+                <a href="index.html">
+                    <h1 id="titre-anime" class="my-name"></h1>
+                </a>
+               </div>
                 <div class="toggle" id="menuBtn">
                     <i class="fa-solid fa-bars ouvrir"></i>
                     <i class="fa-solid fa-xmark fermer"></i>
@@ -84,6 +88,7 @@
         </div>
     </section>
     <main>
+        <div class="mousemove">Tojo</div>
         <section id="about">
             <div class="txt">
                 <p data-aos="zoom-in">Faire connaissance</p>
@@ -97,7 +102,7 @@
                 <div class="block-right" data-aos="fade-right">
                     <p class="paragraph">Bonjour, je suis
                         Tojonirina
-                        RAKOTONDRATSIMBA, 
+                        RAKOTONDRATSIMBA,
                         J'ai 22 ans et je suis un intégrateur de sites web passionné,
                          spécialisé dans la création de sites web interactifs et esthétiques en utilisant les langages HTML et CSS.
                         Mon objectif est de concevoir des expériences en ligne uniques pour donner vie aux visions de mes clients.
@@ -222,262 +227,321 @@
                 <div class="title" data-aos="zoom-in">mes projets</div>
             </div>
             <div class="projects-container">
-                <div class="row-projects">
-                    <div class="row" data-aos="fade-right">
-                       <a  href="https://tojo-nirina.github.io/model-portfolio/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/modelPortfolio.PNG" alt="porfolio">
-                       </a>
-                        <div class="text">
-                            <div class="small-title">portfolio</div>
-                            <p>La création de mon propre portfolio à partir d'un modèle m'a permis de développer mes compétences en conception web.</p>
-                            <div class="btn-link">
-                                <a   class="btn" href="https://tojo-nirina.github.io/model-portfolio/">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a    class="btn" href="https://github.com/tojo-rak/model-portfolio.git">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a    class="btn" href="https://www.figma.com/file/QlPYpHWWNa3YjiSXLrrdLD/personal-portfolio-(Community)?node-id=11%3A105&mode=dev">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                <div class="row-projects" id="carousel">
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" data-aos="fade-right" class="link" href="https://tojo-nirina.github.io/model-portfolio/">
+                                 <img class="img-oval" src="assets/picture/image_de_projet/modelPortfolio.PNG" alt="portfolio">
+                            </a>
+                            <div data-aos="fade-left" class="text">
+                                 <div class="small-title">portfolio</div>
+                                 <p>La création de mon propre portfolio à partir d'un modèle m'a permis de développer mes compétences en conception web.</p>
+                                 <div class="btn-link">
+                                     <a target="_blank" class="btn" href="https://tojo-nirina.github.io/model-portfolio/">
+                                         <img class="active" src="assets/icons/link2.png" alt="link">
+                                         <img class="hover" src="assets/icons/link.png" alt="link">
+                                     </a>
+                                     <a  target="_blank"  class="btn" href="https://github.com/tojo-rak/model-portfolio.git">
+                                         <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                         <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                     </a>
+                                     <a  target="_blank"  class="btn" href="https://www.figma.com/file/QlPYpHWWNa3YjiSXLrrdLD/personal-portfolio-(Community)?node-id=11%3A105&mode=dev">
+                                         <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                         <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                     </a>
+                                 </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link" href=" https://tojo-nirina.github.io/Portfolio_/">
+                                <img class="img-oval" src="assets/picture/image_de_projet/ma-portfolio.PNG" alt="mon portfolio">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">portfolio</div>
+                                <p>Ceci est mon portfolio personnel, reproduit à partir du portfolio de Sandip.</p>
+                                <div class="btn-link">
+                                    <a target="_blank" class="btn" href=" https://tojo-nirina.github.io/Portfolio_/">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://github.com/tojo-rak/tojo-rak.github.io.git">
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a target="_blank" class="btn" href="#">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-left">
-                        <a href=" https://tojo-nirina.github.io/Portfolio_/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/ma-portfolio.PNG" alt="mon portfolio">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">portfolio</div>
-                            <p>Ceci est mon portfolio personnel, reproduit à partir du portfolio de Sandip.</p>
-                            <div class="btn-link">
-                                <a class="btn" href=" https://tojo-nirina.github.io/Portfolio_/">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a class="btn" href="https://github.com/tojo-rak/tojo-rak.github.io.git">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a class="btn" href="#">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link" href="">
+                                <img class="img-oval" src="assets/picture/image_de_projet/Kyoto.PNG" alt="site de Kyoto">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">Kyoto</div>
+                                <p>Après avoir terminé d'apprendre le HTML et le CSS, j'ai réalisé des projets de A à Z.
+                                    Pour mettre en pratique de mes competences.</p>
+                                <div class="btn-link">
+                                    <a class="btn" href="">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a target="_blank" class="btn" href="">
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a target="_blank" class="btn" href="#">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-right">
-                        <a href="">
-                            <img class="img-oval" src="assets/picture/image_de_projet/Kyoto.PNG" alt="site de Kyoto">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">Kyoto</div>
-                            <p>Après avoir terminé d'apprendre le HTML et le CSS, j'ai réalisé des projets de A à Z. 
-                                Pour mettre en pratique de mes competences.</p>
-                            <div class="btn-link">
-                                <a class="btn" href="">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a class="btn" href="">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a class="btn" href="#">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link"  href="https://tojo-nirina.github.io/robbie-lens/">
+                                <img class="img-oval" src="assets/picture/image_de_projet/robbie-lens.png" alt="site de Robbie Lens">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">Robbie Lens</div>
+                                <p>Mon deuxième projet après avoir terminé le cours Hypertext Markup Language et Cascading Style Sheets ou HTML et CSS.</p>
+                                <div class="btn-link">
+                                    <a class="btn" href="https://tojo-nirina.github.io/robbie-lens/">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://github.com/tojo-rak/robbie-lens.git">
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://openclassrooms-student-center.github.io/1603881-creez-votre-site-web-avec-html5-et-css3/">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-left">
-                        <a   href="https://tojo-nirina.github.io/robbie-lens/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/robbie-lens.png" alt="site de Robbie Lens">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">Robbie Lens</div>
-                            <p>Mon deuxième projet après avoir terminé le cours Hypertext Markup Language et Cascading Style Sheets ou HTML et CSS.</p>
-                            <div class="btn-link">
-                                <a class="btn" href="https://tojo-nirina.github.io/robbie-lens/">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a class="btn" href="https://github.com/tojo-rak/robbie-lens.git">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a class="btn" href="https://openclassrooms-student-center.github.io/1603881-creez-votre-site-web-avec-html5-et-css3/">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link" href="https://tojo-nirina.github.io/take/">
+                                <img class="img-oval" src="assets/picture/image_de_projet/take.PNG" alt="site de take">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">Take</div>
+                                <p>J'ai réalisé mon deuxième projet en utilisant un framework de développement front-end et en m'appuyant sur la maquette fournie.</p>
+                                <div class="btn-link">
+                                    <a target="_blank" href="https://tojo-nirina.github.io/take/" class="btn">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://github.com/tojo-rak/take.git"  >
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a target="_blank" class="btn" href="#">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-right">
-                        <a href="https://tojo-nirina.github.io/robbieLensBootstrap/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/robbie-lens.png" alt="site de Robbie Lens">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">Robbie Lens</div>
-                            <p>C'est mon premier projet créé à l'aide du framework de développement front-end open source ou bootstrap.</p>
-                            <div class="btn-link">
-                                <a class="btn" href="https://tojo-nirina.github.io/robbieLensBootstrap/">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a class="btn" href="https://github.com/tojo-rak/robbieLensBootstrap.git">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a class="btn" href="#">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link" href="https://tojo-nirina.github.io/robbieLensBootstrap/">
+                                <img class="img-oval" src="assets/picture/image_de_projet/robbie-lens.png" alt="site de Robbie Lens">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">Robbie Lens</div>
+                                <p>C'est mon premier projet créé à l'aide du framework de développement front-end open source ou bootstrap.</p>
+                                <div class="btn-link">
+                                    <a target="_blank" class="btn" href="https://tojo-nirina.github.io/robbieLensBootstrap/">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a class="btn" href="https://github.com/tojo-rak/robbieLensBootstrap.git">
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a target="_blank" class="btn" href="#">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-left">
-                        <a href="https://tojo-nirina.github.io/take/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/take.PNG" alt="site de take">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">Take</div>
-                            <p>J'ai réalisé mon deuxième projet en utilisant un framework de développement front-end et en m'appuyant sur la maquette fournie.</p>
-                            <div class="btn-link">
-                                <a href="https://tojo-nirina.github.io/take/" class="btn">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a class="btn" href="https://github.com/tojo-rak/take.git"  >
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a class="btn" href="#">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link" href="https://tojo-nirina.github.io/fisheye/">
+                                <img class="img-oval" src="assets/picture/image_de_projet/Fiseye.PNG" alt="projets fisheye">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">Fisheye</div>
+                                <p>Un projet où j'ai appris à utiliser figma et implémenté javascript pour la première fois.</p>
+                                <div class="btn-link">
+                                    <a target="_blank" class="btn" href="https://tojo-nirina.github.io/fisheye/">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a class="btn" href="https://github.com/tojo-rak/fisheye.git">
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://www.figma.com/file/Q3yNeD7WTK9QHDldg9vaRl/UI-Design-FishEye-FR?type=design&node-id=0-1&mode=design&t=kqHipDpKjxPwmav0-0">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-right">
-                        <a href="https://tojo-nirina.github.io/fisheye/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/Fiseye.PNG" alt="projets fisheye">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">Fisheye</div>
-                            <p>Un projet où j'ai appris à utiliser figma et implémenté javascript pour la première fois.</p>
-                            <div class="btn-link">
-                                <a class="btn" href="https://tojo-nirina.github.io/fisheye/">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a class="btn" href="https://github.com/tojo-rak/fisheye.git">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a class="btn" href="https://www.figma.com/file/Q3yNeD7WTK9QHDldg9vaRl/UI-Design-FishEye-FR?type=design&node-id=0-1&mode=design&t=kqHipDpKjxPwmav0-0">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                    <div  class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link" href="https://tojo-nirina.github.io/dashboard-mockup/">
+                                <img class="img-oval" src="assets/picture/image_de_projet/dashboard.PNG" alt="projets dashboard">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">Dashboard mockup</div>
+                                <p>Un projet, que j'ai réalisé pour renforcer davantage mes compétences dans l'utilisation de figma également.</p>
+                                <div class="btn-link">
+                                    <a target="_blank" class="btn" href="https://tojo-nirina.github.io/dashboard-mockup/">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a class="btn" href="https://github.com/tojo-rak/dashboard-mockup.git">
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://app.visily.ai/projects/4f5b99bf-68c8-4755-8812-636f472f7ace/boards/447986">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-left">
-                        <a href="https://tojo-nirina.github.io/dashboard-mockup/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/dashboard.PNG" alt="projets dashboard">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">Dashboard mockup</div>
-                            <p>Un projet, que j'ai réalisé pour renforcer davantage mes compétences dans l'utilisation de figma également.</p>
-                            <div class="btn-link">
-                                <a class="btn" href="https://tojo-nirina.github.io/dashboard-mockup/">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a class="btn" href="https://github.com/tojo-rak/dashboard-mockup.git">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a class="btn" href="https://app.visily.ai/projects/4f5b99bf-68c8-4755-8812-636f472f7ace/boards/447986">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link" href="https://tojo-nirina.github.io/hounter/">
+                                <img class="img-oval" src="assets/picture/image_de_projet/Hounter.PNG" alt="projets hounter">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">Hounter</div>
+                                <p>Un projet que j'ai entrepris pour améliorer et renforcer continuellement mes compétences.</p>
+                                <div class="btn-link">
+                                    <a target="_blank" class="btn" href="https://tojo-nirina.github.io/hounter/">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a class="btn" href="https://github.com/tojo-rak/hounter.git">
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://www.figma.com/file/oUS0zH00UxM4uaKqpSTZ0z/Houter---House-Hunter-UI-Design-(Community)?node-id=4%3A18&mode=dev">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-right">
-                        <a href="https://tojo-nirina.github.io/hounter/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/Hounter.PNG" alt="projets hounter">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">Hounter</div>
-                            <p>Un projet que j'ai entrepris pour améliorer et renforcer continuellement mes compétences.</p>
-                            <div class="btn-link">
-                                <a class="btn" href="https://tojo-nirina.github.io/hounter/">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a class="btn" href="https://github.com/tojo-rak/hounter.git">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a class="btn" href="https://www.figma.com/file/oUS0zH00UxM4uaKqpSTZ0z/Houter---House-Hunter-UI-Design-(Community)?node-id=4%3A18&mode=dev">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link" href="https://tojo-nirina.github.io/sign/">
+                                <img class="img-oval" src="assets/picture/image_de_projet/sign.PNG" alt="peojets sign">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">Sign-in</div>
+                                <p>J'ai entrepris un projet de système de connexion dans le but d'améliorer et de renforcer en permanence mes compétences.</p>
+                                <div class="btn-link">
+                                    <a target="_blank"  class="btn" href="https://tojo-nirina.github.io/sign/">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a    class="btn" href="https://github.com/tojo-rak/sign.git">
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a  target="_blank"  class="btn" href="https://www.figma.com/file/MiLhsGg91612kENd8USzri/Responsive-Sign-in-Web-Page-(Community)?node-id=101%3A179&mode=dev">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-left">
-                        <a href="https://tojo-nirina.github.io/sign/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/sign.PNG" alt="peojets sign">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">Sign-in</div>
-                            <p>J'ai entrepris un projet de système de connexion dans le but d'améliorer et de renforcer en permanence mes compétences.</p>
-                            <div class="btn-link">
-                                <a   class="btn" href="https://tojo-nirina.github.io/sign/">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a    class="btn" href="https://github.com/tojo-rak/sign.git">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a    class="btn" href="https://www.figma.com/file/MiLhsGg91612kENd8USzri/Responsive-Sign-in-Web-Page-(Community)?node-id=101%3A179&mode=dev">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
+                    <div class="custom-slider fade">
+                        <div class="row">
+                            <a target="_blank" class="link" href="https://tojo-nirina.github.io/Monito/">
+                                <img class="img-oval" src="assets/picture/image_de_projet/monito1.PNG" alt="projets monito">
+                            </a>
+                            <div class="text">
+                                <div class="small-title">Monito</div>
+                                <p>Ceci constitue mon projet final, englobant toutes les connaissances que j'ai acquises en utilisant html, css et javascript.</p>
+                                <div class="btn-link">
+                                    <a target="_blank" class="btn" href=" https://tojo-nirina.github.io/Monito/">
+                                        <img class="active" src="assets/icons/link2.png" alt="link">
+                                        <img class="hover" src="assets/icons/link.png" alt="link">
+                                    </a>
+                                    <a class="btn" href="https://github.com/tojo-rak/Monito.git">
+                                        <img class="active" src="assets/icons/github-fill2.png" alt="github">
+                                        <img class="hover" src="assets/icons/github-fill.png" alt="github">
+                                    </a>
+                                    <a target="_blank" class="btn" href="https://www.figma.com/file/G18Sp3rgmgDpCUbqJbVmws/%5BFREE-TEMPLATE%5D-eCommerce-Website---Monito-Pets-for-Best-(Community)-(Community)?node-id=65%3A2308&mode=dev">
+                                        <img class="active" src="assets/icons/figma1.png" alt="figma">
+                                        <img class="hover" src="assets/icons/figma.png" alt="figma">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" data-aos="fade-right">
-                        <a href="https://tojo-nirina.github.io/Monito/">
-                            <img class="img-oval" src="assets/picture/image_de_projet/monito1.PNG" alt="projets monito">
-                        </a>
-                        <div class="text">
-                            <div class="small-title">Monito</div>
-                            <p>Ceci constitue mon projet final, englobant toutes les connaissances que j'ai acquises en utilisant html, css et javascript.</p>
-                            <div class="btn-link">
-                                <a class="btn" href=" https://tojo-nirina.github.io/Monito/">
-                                    <img class="active" src="assets/icons/link2.png" alt="link">
-                                    <img class="hover" src="assets/icons/link.png" alt="link">
-                                </a>
-                                <a class="btn" href="https://github.com/tojo-rak/Monito.git">
-                                    <img class="active" src="assets/icons/github-fill2.png" alt="github">
-                                    <img class="hover" src="assets/icons/github-fill.png" alt="github">
-                                </a>
-                                <a class="btn" href="https://www.figma.com/file/G18Sp3rgmgDpCUbqJbVmws/%5BFREE-TEMPLATE%5D-eCommerce-Website---Monito-Pets-for-Best-(Community)-(Community)?node-id=65%3A2308&mode=dev">
-                                    <img class="active" src="assets/icons/figma1.png" alt="figma">
-                                    <img class="hover" src="assets/icons/figma.png" alt="figma">
-                                </a>
-                            </div>
-                        </div>
+                    <div class="slide-dot">
+                        <span class="dot" onclick="currentSlide(1)" data-aos="fade-right">
+                            <img class="indicator" src="assets/picture/image_de_projet/modelPortfolio.PNG" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(2)" data-aos="fade-left">
+                            <img  class="indicator" src="assets/picture/image_de_projet/ma-portfolio.PNG" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(3)" data-aos="fade-right">
+                            <img  class="indicator" src="assets/picture/image_de_projet/Kyoto.PNG" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(4)" data-aos="fade-left">
+                            <img  class="indicator" src="assets/picture/image_de_projet/robbie-lens.png" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(5)" data-aos="fade-right">
+                            <img  class="indicator" src="assets/picture/image_de_projet/take.PNG" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(6)" data-aos="fade-left">
+                            <img  class="indicator" src="assets/picture/image_de_projet/robbie-lens.png" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(7)" data-aos="fade-right">
+                            <img  class="indicator" src="assets/picture/image_de_projet/Fiseye.PNG" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(8)" data-aos="fade-left">
+                            <img  class="indicator" src="assets/picture/image_de_projet/dashboard.PNG" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(9)" data-aos="fade-right">
+                            <img  class="indicator" src="assets/picture/image_de_projet/Hounter.PNG" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(10)" data-aos="fade-left">
+                            <img  class="indicator" src="assets/picture/image_de_projet/sign.PNG" alt="dog">
+                        </span>
+                        <span class="dot" onclick="currentSlide(11)" data-aos="fade-right">
+                            <img  class="indicator" src="assets/picture/image_de_projet/monito1.PNG" alt="dog">
+                        </span>
                     </div>
                 </div>
+                <span id="prev-button" onclick="plusSlides(-1)" data-aos="fade-right">&#10094;</span>
+                <span id="next-button" onclick="plusSlides(1)" data-aos="fade-left">&#10095;</span>
             </div>
         </section>
         <section id="contact">
@@ -534,7 +598,7 @@
     </main>
     <footer>
         <div class="txt">
-            <div class="title" data-aos="zoom-in">Merci..!</div>
+            <div class="title" >Merci..!</div>
         </div>
         <div class="icons">
             <div class="icon" data-aos="fade-right">

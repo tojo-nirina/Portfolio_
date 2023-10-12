@@ -76,7 +76,7 @@ nav .my-name {
     position: relative;
 }
 
-.mousemove {
+/* .mousemove {
     width: 45px;
     height: 45px;
     position: absolute;
@@ -91,7 +91,7 @@ nav .my-name {
     z-index: 4;
     transform: translate(-50%, 20%);
     transition: 0.3s;
-}
+} */
 
 nav .my-name:hover {transform: scale(1.1);}
 
@@ -599,9 +599,6 @@ nav .my-name:hover {transform: scale(1.1);}
     right: 0;
 }
 
-
-
-
 .slide-dot {
     display: flex;
     align-items: center;
@@ -624,7 +621,7 @@ nav .my-name:hover {transform: scale(1.1);}
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border: 1px solid #00D1FF;
+    border: 1px solid rgba(0, 209, 255, 0.50);
 }
 
 .actived, .dot:hover {
@@ -690,13 +687,10 @@ nav .my-name:hover {transform: scale(1.1);}
 
 .row-projects .row .link {
     width: 100%;
+    
     padding: 12px;
     background: rgba(0, 209, 255, 0.50);
     border-radius: 10px;
-}
-
-.row-projects .row:hover {
-    /* background: #00D1FF; */
 }
 
 .row-projects .img-oval {
@@ -731,6 +725,7 @@ nav .my-name:hover {transform: scale(1.1);}
 
 .row-projects .text {
     width:100%;
+   
     padding: 40px;
     background: rgba(0, 209, 255, 0.50);
     border-radius: 10px;
@@ -1043,6 +1038,43 @@ footer .sandip {
     color: rgba(0, 36, 44, 1);
 }
 
+
+@media screen and (max-width: 1150px) {
+    .row-projects .text p {
+        height: auto;
+    }
+
+    .row-projects .row .link {
+        height: 300px;
+    }
+
+    .row-projects .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .row-projects .row .link {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .row-projects .text {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .row-projects .text {
+        padding: 20px;
+    }
+
+    .row-projects .row {
+        border-radius: 10px!important;
+    }
+
+    #prev-button, #next-button {
+        color: #00D1FF;
+        background: #005062;
+    }
+}
+
 @media screen and (max-width: 1115px) {
     nav { max-width: 90%; }
 
@@ -1052,8 +1084,15 @@ footer .sandip {
 
     .row-projects {gap: 30px;}
 
-    .row-projects .row .img-oval { width: 100%;}
+    .row-projects .row .img-oval {
+        width: 100%;
+        height: 100%;
+    }
 
+    main {
+        max-width: 90%;
+    }
+    
     .contact-content { flex-direction: column; }
 
     #contact .container {
@@ -1062,8 +1101,6 @@ footer .sandip {
     }
 
     .block-contact { width: 60%;}
-
-    main {max-width: 92%;}
 
 }
 
@@ -1143,11 +1180,6 @@ footer .sandip {
         color: #00D1FF;
     }
 
-    main {
-        max-width: 90%;
-        margin: auto;
-    }
-
     .block-container .oval1 {
         width: 500px;
         height: 500px;
@@ -1193,10 +1225,20 @@ footer .sandip {
 @media screen and (max-width: 850px) {
     .row-projects {grid-template-columns: 1fr;}
 
-    .row-projects .text p {
-        height: auto;
-    }
     .down {
+        display: none;
+    }
+
+    main {
+        max-width: 95%;
+        margin: auto;
+    }
+
+    nav {
+        max-width: 95%;
+    }
+
+    .slide-dot {
         display: none;
     }
 
@@ -1205,8 +1247,32 @@ footer .sandip {
 @media screen and (max-width: 576px) {
     .presentation .name {
        font-size: 80px;
-       line-height: 90px;
+       line-height: 70px;
        text-align: center;
+    }
+
+    .home {
+        height: 1000px;
+    }
+
+    #experience {
+        margin-top: 50px;
+    }
+
+    .experience-row {
+        margin-top: 0px;
+        gap: 0px;
+    }
+
+    #projects {
+        margin: 50px 0;
+    }
+    .projects-container {
+        margin-top: 25px;
+    }
+
+    .contact-content {
+        margin-top: 25px;
     }
 
     .block-container .oval1 {
@@ -1233,8 +1299,6 @@ footer .sandip {
          padding: 20px 20px;
     }
 
-    .contact-content {margin-top: 40px;}
-
     footer .icons {  gap: 20px;}
 
     footer .icon {
@@ -1252,6 +1316,23 @@ footer .sandip {
     .oval-rond {
         top: 195px;
         right: 12px;
+    }
+
+    .row-projects {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-container {
+        margin-top: 15px;
+    }
+
+    .button {
+        gap: 15px;
+    }
+
+    #contact .container {
+        gap: 17px;
     }
 }
 

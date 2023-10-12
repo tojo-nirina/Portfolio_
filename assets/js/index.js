@@ -1,12 +1,12 @@
 const myName = document.querySelector('.my-name');
-const mousemove = document.querySelector(".mousemove");
+// const mousemove = document.querySelector(".mousemove");
   myName.innerText = '< RT / >';
 
-  window.addEventListener("mousemove", (e) => {
-    //console.log(e.target);
-    mousemove.style.left = e.pageX + "px";
-    mousemove.style.top = e.pageY + "px";
-  })
+  // window.addEventListener("mousemove", (e) => {
+  //   //console.log(e.target);
+  //   mousemove.style.left = e.pageX + "px";
+  //   mousemove.style.top = e.pageY + "px";
+  // })
 
   //****menu responsive****/
 let toggle = document.querySelector('.toggle');
